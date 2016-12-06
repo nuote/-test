@@ -1,0 +1,393 @@
+/*start*/
+.slider {
+  height: 100%;
+}
+.slider-slide {
+  padding-top: 80px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+#logo {
+  margin: 30px 0px;
+}
+
+#list {
+  width: 170px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+#list ol {
+  margin-top: 30px;
+}
+#list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px;
+}
+
+.button.ng-hide{
+  display:none;
+}
+
+/*start*/
+
+/* Empty. Add your own CSS if you like */
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) > *{
+  margin-top: 10px;
+}
+/*ionicModel铺满全屏*/
+.fullShow{height: 100%;width: 100%;top:0;right: 0;left: 0; !important}
+/*
+	Custom Animation
+*/
+.slide-in-right {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.slide-in-right.ng-enter, .slide-in-right > .ng-enter {
+  -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms;
+  transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms; }
+
+.slide-in-right.ng-enter-active, .slide-in-right > .ng-enter-active {
+  -webkit-transform: translateX(0);
+  transform: translateX(0); }
+
+.slide-in-right.ng-leave, .slide-in-right > .ng-leave {
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms; }
+/*登录*/
+body{
+  /*background: url(../img/bg.jpg) no-repeat center center fixed;*/
+}
+.login {
+  background: url(../img/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow:hidden;
+}
+.login-wrapper #logo{
+  width: 80%;
+  margin: 3em auto;
+}
+.login-wrapper #logo img{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+#login-content{
+  width: 90%;
+  margin :30% auto;
+}
+#login-content .item-input .icon{
+  min-width: 33px;
+  font-size: 34px;
+  line-height: 1px;
+}
+.item-input input {
+  font-size: 15px;
+  padding-left: 5px;
+}
+#login-content .submit {
+  background: #22c064;
+  height: 55px;
+  text-align: center;
+  cursor: pointer;
+}
+#login-content .submit p {
+  font-family: 微软雅黑;
+  font-size: 18px;
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+#footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+ .bar-assertive  {
+  background: url(../img/bg.jpg) no-repeat 30% 100% fixed!important;
+  background-size: cover;
+}
+#footer_btn {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 15px;
+}
+.creat {
+  float: left;
+  margin-left: 5%;
+  margin-right: 30%;
+}
+.forget {
+  margin-left: 30%;
+}
+/*注册*/
+
+.signup-wrapper .header {
+  /*padding-top: 20px;*/
+  background: #444;
+}
+.header h3 {
+  font-family: 'avenir', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+.header span i {
+  font-size: 30px;
+  color: #fff;
+  margin-left: 10px;
+}
+.signup-wrapper .header img {
+  width: 30%;
+  margin: 10%;
+}
+.form-wrapper label.item {
+  border: none;
+  border-bottom: 1px solid rgba(187, 187, 189, 0.3);
+  margin-bottom: 19px;
+}
+.form-wrapper  .item-input .icon {
+  min-width: 35px;
+  font-size: 30px;
+  line-height: 1px;
+}
+.got_account {
+  padding-top: 50px;
+}
+.got_account p {
+  font-family: 'avenir', sans-serif;
+  font-size: 13px;
+  color: rgba(29, 29, 38, 0.5);
+}
+.got_account p a {
+  color: #1d1d26;
+  text-decoration: none;
+}
+
+/*忘记密码*/
+.form-wrapper {
+  font-family: 'avenir', sans-serif;
+}
+.form-wrapper h4 {
+  font-family: 'avenir', sans-serif;
+  padding: 10px;
+  text-align: center;
+  margin-top: 25px;
+}
+.form-wrapper button.forgetpass {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #22c064;
+  color: #fff;
+  margin-top: 35px;
+  border-color: transparent;
+  font-family: 'avenir', sans-serif;
+}
+.form-wrapper p.fineprint {
+  font-family: 'avenir', sans-serif;
+  font-size: 11px;
+  padding: 10px;
+  text-align: center;
+}
+/*index*/
+
+/*
+	Timeline
+*/
+.scroll-content.greyBG {
+  background: #ebebeb;
+  padding: 0.6em;
+}
+.imageHolder {
+  background: #fff;
+  max-height: 238px;
+}
+.item.no-padding {
+  margin-bottom: 2em;
+}
+.imageHolder img {
+  width: 100%;
+}
+.imageHolder span.favorite {
+  position: absolute;
+  z-index: 80;
+  top: 0.5em;
+  left: 0.4em;
+  color: #fff;
+  font-size: 1.9em;
+  background-color: rgba(94,94,96,.4);
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+.mini-info {
+  max-height: 63px;
+}
+.mini-info img {
+  width: 80%;
+}
+.mini-profile p:first-child {
+  font-size: 13px;
+  font-weight: 600;
+}
+p.mini-user span {
+  color: #2f93dc;
+  font-weight: bold;
+}
+.mini-profile {
+  position: relative;
+  left: -15px;
+  flex: 0 0 85%;
+  max-width: 85%;
+}
+.mini-profile span.mini-icon {
+  color: #ccc;
+  float: right;
+  font-size: 1.15em;
+  position: relative;
+  bottom: 1em;
+}
+
+/*wode*/
+#mine .info {
+  height: 160px
+}
+
+#mine .info .profile {
+  padding: 15px
+}
+
+#mine .info .profile .avatar {
+  float: left;
+  height: 60px;
+  width: 60px;
+  background: url(../img/mine.png) no-repeat;
+  background-size: cover
+}
+
+#mine .info .profile .detail {
+  float: left;
+  margin: 10px 0 0 20px;
+  height: 60px;
+  line-height: 22px
+}
+
+#mine .info .profile .edit {
+  float: right;
+  padding: 7px;
+  font-size: 20px
+}
+
+/* Your app's CSS, go crazy, make it your own */
+
+.ionic-logo {
+  display: block;
+  margin: 15px auto;
+  width: 96px;
+  height: 96px;
+}
+
+.pane {
+  background-color: #333;
+}
+
+.bar.bar-transparent {
+  background-color: transparent;
+  background-image: none;
+  border: none;
+}
+
+.bar .title {
+  color: #eee;
+}
+
+.swipe-cards {
+  position: fixed;
+}
+
+swipe-card {
+  display: none;
+  position: fixed;
+  -webkit-transform: scale(1,1);
+  /*scale：缩放，1为原始大小。scale(x)。正数放大，负数缩小。属性值为一个时，
+  x/y轴同时缩放；属性值为两个值时，分别控制x、y轴的缩放。*/
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  height: 300px;
+  margin-left: -150px;
+  margin-top: -150px;
+  box-sizing: border-box;
+  background-color: rgb(255,255,255);
+  border-radius: 4px;
+  overflow: hidden;
+  -webkit-animation-fill-mode: forwards;
+}
+
+swipe-card .title {
+  height: 40px;
+  padding: 5px;
+  line-height: 30px;
+  color: #444;
+}
+swipe-card .image {
+  overflow: hidden;
+  max-height: 210px;
+}
+swipe-card .button {
+  border: none;
+}
+swipe-card .image img {
+  width: 100%;
+  border-radius: 0px 0px 4px 4px;
+}
+
+#start-card {
+  color: #fff;
+  background-color: #30BD8A;
+  line-height: 300px;
+  word-wrap: break-word;
+  border: 6px solid #4CD68E;
+  text-align: center;
+}
+#start-card span {
+  display: inline-block;
+  line-height: 40px;
+  width: 200px;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+#footer .button {
+  color: #fff;
+}
+/*@-webkit-keyframes规定动画。*/
+@-webkit-keyframes bounceIn {
+  0% {
+    -webkit-transform: scale(0,0);
+  }
+  70% {
+    -webkit-transform: scale(1.2,1.2);
+  }
+  100% {
+    -webkit-transform: scale(1,1);
+  }
+}
+
+swipe-card.pop-in-start {
+  -webkit-transform: scale(0,0);
+}
+swipe-card.pop-in {
+  /*animation: name duration timing-function delay iteration-count direction*/
+  -webkit-animation: bounceIn 0.4s ease-out;
+}

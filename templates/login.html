@@ -1,0 +1,168 @@
+<ion-view title="登录" has-header="false"  hide-tab="true" hide-back-button="true" hide-nav-bar="true">
+  <ion-content class="padding login">
+    <div class="login-wrapper">
+
+      <div id="logo" class="login-logo">
+        <img src="img/login-logo.png" />
+      </div>
+      <div id="login-content">
+        <form>
+          <label class="item item-input">
+            <i class="icon ion-ios-email-outline placeholder-icon"></i>
+            <input type="text" placeholder="请输入用户名" ng-model="User.username">
+          </label>
+          <label class="item item-input">
+            <i class="icon ion-ios-locked-outline placeholder-icon"></i>
+            <input type="password" placeholder="请输入密码" ng-model="User.password">
+          </label>
+          <label class="item item-input submit" ng-click="signUp()">
+            <p>登 录</p>
+          </label>
+        </form>
+      </div>
+
+    </div>
+
+  </ion-content>
+
+  <ion-footer-bar align-text="center" class="bar-assertive">
+    <div id="footer_btn">
+      <span class="creat" ng-click="signIn()">
+        注册
+      </span>
+      <span class="forget" ng-click="signForget()">
+        忘记密码
+      </span>
+    </div>
+  </ion-footer-bar>
+  <script id="sign-in" type="text/ng-template">
+    <ion-modal-view class="fullShow">
+      <ion-view view-title="Sign Up" hide-tab="true" hide-back-button="true" hide-nav-bar="true">
+        <ion-content>
+          <div class="signup-wrapper">
+            <div class="header">
+              <div class="row">
+                <div class="col" ng-click="closeSignInModal()">
+				  	<span>
+						  <i class="icon ion-android-arrow-back"></i>
+						</span>
+                </div>
+                <div class="col col-50">
+                  <h3>注册成为会员</h3>
+                </div>
+                <div class="col" ng-click="signOn()">
+				  	<span style="float:right;padding-right:10px">
+				  		<i class="icon ion-android-done"></i>
+						</span>
+                </div>
+              </div>
+
+            </div>
+            <!-- END .header -->
+
+            <div class="form-wrapper">
+              <div class="list list-inset">
+                <label class="item item-input">
+                  <i class="icon ion-ios-person-outline placeholder-icon"></i>
+                  <input type="text" placeholder="用户名" ng-model="User.username">
+                </label>
+                <label class="item item-input">
+                  <i class="icon ion-ios-locked-outline placeholder-icon"></i>
+                  <input type="password" placeholder="输入密码" ng-model="User.password">
+                </label>
+                <label class="item item-input">
+                  <i class="icon ion-ios-locked-outline placeholder-icon"></i>
+                  <input type="password" placeholder="请再次输入密码" ng-model="User.confirm_psd">
+                </label>
+                <label class="item item-input">
+                  <i class="icon ion-ipad placeholder-icon"></i>
+                  <input type="tel" placeholder="手机号" ng-model="User.tel">
+                </label>
+                <!--<label class="item item-input">
+                  <i class="icon ion-male placeholder-icon"></i>
+                  <input type="text" placeholder="Gender" ng-minlength="4" ng-maxlength="6">
+                </label>
+                <label class="item item-input">
+                  <i class="icon ion-ios-calendar-outline placeholder-icon"></i>
+                  <ionic-datepicker idate="currentDate" disablepreviousdates="false" callback="datePickerCallback">
+                    <input type="text" placeholder="{{ currentDate | date:'dd - MMMM - yyyy' }}">
+                  </ionic-datepicker>
+                </label>
+                <label class="item item-input">
+                  <i class="icon ion-ios-location-outline placeholder-icon"></i>
+                  <input type="text" placeholder="Location">
+                </label>-->
+                 <!--<label class="item item-input item-select">
+                          <div class="input-label">
+                            <i class="icon ion-male placeholder-icon"></i>
+                          </div>
+                          <select>
+                            <option selected>Male</option>
+                            <option>Female</option>
+                          </select>
+                        </label>-->
+              </div>
+              <p style="padding-left:10px;font-size:12px;opacity:0.6;width:90%;margin:0 auto;">
+                <span style="color:red;">**</span>已经是会员可以直接登录.
+              </p>
+            </div>
+            <!-- END .form-wrapper -->
+
+            <div class="row got_account">
+              <div class="col col-67 col-offset-20">
+                <p>我已经是会员? <a href="#" ng-click="closeSignInModal()">登录</a></p>
+              </div>
+            </div>
+          </div>
+          <!-- END .signup-wrapper -->
+        </ion-content>
+      </ion-view>
+    </ion-modal-view>
+  </script>
+  <script id="sign-forget" type="text/ng-template">
+    <ion-modal-view class="fullShow">
+      <ion-view view-title="Forget Password" hide-tab="true" hide-back-button="true" hide-nav-bar="true">
+        <ion-content>
+          <div class="signup-wrapper">
+            <div class="header">
+              <div class="row">
+                <div class="col" ng-click="closePass()">
+				  	<span>
+						  <i class="icon ion-android-arrow-back"></i>
+						</span>
+                </div>
+                <div class="col col-50">
+                  <h3>忘记密码</h3>
+                </div>
+                <div class="col">
+                  <!-- <span style="float:right;padding-right:10px">
+                                <i class="icon ion-android-done"></i>
+                              </span> -->
+                </div>
+              </div>
+
+            </div>
+            <!-- END .header -->
+
+            <div class="form-wrapper">
+              <h4>Please enter the email address used to create your account</h4>
+              <div class="list list-inset" style="margin-top:40px;">
+                <label class="item item-input">
+                  <i class="icon ion-ios-email-outline placeholder-icon"></i>
+                  <input type="email" placeholder="Email">
+                </label>
+              </div>
+
+              <button type="submit" class="button button-block forgetpass">
+                Continue
+              </button>
+              <p class="fineprint">You will be able to reset your password on the next page.</p>
+            </div>
+            <!-- END .form-wrapper -->
+          </div>
+          <!-- END .signup-wrapper -->
+        </ion-content>
+      </ion-view>
+    </ion-modal-view>
+  </script>
+</ion-view>

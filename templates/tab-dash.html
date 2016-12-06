@@ -1,0 +1,107 @@
+
+<ion-view view-title="Timeline" hide-tab="true" hide-back-button="true">
+  <ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-ios-videocam"></button>
+  </ion-nav-buttons>
+
+  <ion-content class="greyBG">
+    <ion-refresher pulling-text="Pull to refresh..." on-refresh="doRefresh()"></ion-refresher>
+    <ion-list>
+      <!--
+      You use use ng-repeat on ion-item to iterate over your data
+       -->
+      <ion-item class="no-padding">
+        <div class="post">
+          <div class="imageHolder">
+            <img src="img/woman.jpg">
+            <div class="top-nav">
+            <span class="favorite">
+              <i class="icon ion-heart"></i>
+            </span>
+            </div>
+          </div>
+          <!-- END imageHolder -->
+          <div class="row mini-info">
+            <div class="col col-20">
+              <img src="img/user1.jpg">
+            </div>
+            <div class="col col-80 mini-profile">
+              <p>
+                Is my fiance not gorgeous? I like. I love. I love. I love. I love. I love.
+              </p>
+              <p class="mini-user">by <span>dayaki007</span></p>
+            <span class="mini-icon">
+              <i class="icon ion-chatbox"></i> 21 &nbsp;
+              <i class="icon ion-heart"></i> 16
+            </span>
+            </div>
+          </div>
+          <!-- END mini-info -->
+        </div>
+      </ion-item>
+
+      <!-- Start removing from this line if you are using ng-repeat -->
+
+      <ion-item class="no-padding">
+        <div class="post">
+          <div class="imageHolder">
+            <img src="img/woman2.jpg">
+            <div class="top-nav">
+            <span class="favorite">
+              <i class="icon ion-heart"></i>
+            </span>
+            </div>
+          </div>
+          <!-- END imageHolder -->
+          <div class="row mini-info">
+            <div class="col col-20">
+              <img src="img/user2.jpg">
+            </div>
+            <div class="col col-80 mini-profile">
+              <p>
+                Went out shopping today. My new look.
+              </p>
+              <p class="mini-user">by <span>dayaki007</span></p>
+            <span class="mini-icon">
+              <i class="icon ion-chatbox"></i> 2 &nbsp;
+              <i class="icon ion-heart"></i> 6
+            </span>
+            </div>
+          </div>
+          <!-- END mini-info -->
+        </div>
+      </ion-item>
+
+      <ion-item class="no-padding">
+        <div class="post">
+          <div class="imageHolder">
+            <img src="img/woman3.jpg">
+          <span class="favorite">
+            <i class="icon ion-heart"></i>
+          </span>
+          </div>
+          <!-- END imageHolder -->
+          <div class="row mini-info">
+            <div class="col col-20">
+              <img src="img/user2.jpg">
+            </div>
+            <div class="col col-80 mini-profile">
+              <p>
+                My new gorgeous smart watch. Thanks @akindotun.
+              </p>
+              <p class="mini-user">by <span>Katiesp</span></p>
+            <span class="mini-icon">
+              <i class="icon ion-chatbox"></i> 8 &nbsp;
+              <i class="icon ion-heart"></i> 4
+            </span>
+            </div>
+          </div>
+          <!-- END mini-info -->
+        </div>
+      </ion-item>
+
+      <!-- STOP removing from here -->
+    </ion-list>
+  </ion-content>
+
+</ion-view>
